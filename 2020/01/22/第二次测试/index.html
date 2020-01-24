@@ -26,9 +26,9 @@
     scheme: 'Pisces',
     version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},
+    sidebar: {"position":"left","width":310,"display":"always","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -183,10 +183,7 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -423,9 +420,16 @@
 
       </div>
 
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=210 src="//music.163.com/outchain/player?type=0&id=2973291524&auto=1&height=430"></iframe>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
+
 
 
       </div>

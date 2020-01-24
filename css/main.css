@@ -1160,7 +1160,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e560be;
+  background: #ff06ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1466,38 +1466,31 @@ pre .javascript .function {
   }
 }
 .back-to-top {
-  background: #222;
-  bottom: -100px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
+  background: #f5f7f9;
   font-size: 12px;
-  left: 30px;
-  opacity: 0.6;
-  padding: 0 6px;
-  position: fixed;
+  margin: 8px -10px -20px;
+  opacity: 0;
   text-align: center;
-  transition-property: bottom;
-  z-index: 1300;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  width: 24px;
-}
-.back-to-top span {
-  display: none;
-}
-.back-to-top:hover {
-  color: #fc6423;
 }
 .back-to-top.back-to-top-on {
-  bottom: 30px;
+  cursor: pointer;
+  opacity: 0.6;
 }
-@media (max-width: 991px) {
-  .back-to-top {
-    left: 20px;
-    opacity: 0.8;
-  }
+.back-to-top.back-to-top-on:hover {
+  opacity: 0.8;
+}
+.reading-progress-bar {
+  background: #37c6c0;
+  display: block;
+  height: 3px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 0;
+  z-index: 1500;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -2167,11 +2160,11 @@ ul.breadcrumb li + li:last-child {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 240px;
+  width: 310px;
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 240px;
+    width: 310px;
   }
 }
 @media (max-width: 991px) {
@@ -2198,7 +2191,7 @@ ul.breadcrumb li + li:last-child {
   box-shadow: initial;
   box-sizing: border-box;
   padding: 40px;
-  width: calc(100% - 252px);
+  width: calc(100% - 322px);
 }
 @media (max-width: 991px) {
   .content-wrap {
@@ -2334,7 +2327,7 @@ ul.breadcrumb li + li:last-child {
   box-shadow: none;
   margin-top: 100%;
   position: static;
-  width: 240px;
+  width: 310px;
 }
 @media (max-width: 991px) {
   .sidebar {
@@ -2359,7 +2352,7 @@ ul.breadcrumb li + li:last-child {
   box-shadow: initial;
   box-sizing: border-box;
   color: #555;
-  width: 240px;
+  width: 310px;
   opacity: 0;
 }
 .sidebar-inner.affix {
